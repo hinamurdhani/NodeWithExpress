@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+ 
+<body>
+
+    {{>navbar}}
+
+ <form action="/register" method="POST">
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="firstname" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="lastname" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Date Of Birth -------------------------------------------------------->
+
+ 
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email" maxlength="100" /></td>
+</tr>
+
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="gender" value="Male" />
+Female <input type="radio" name="gender" value="Female" />
+</td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="phone" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td>
+<input type="Number" name="age" maxlength="2" />
+</td>
+</tr>
+ 
+
+ 
+<tr>
+<td>Password: </td>
+<td>
+<input type="Password" id="pass" name="password"> <br>  
+</td>
+</tr>
+
+<tr>
+<td>Re-type password:</td>
+<td>
+<input type="Password" id="repass" name="confirmpass"> <br>  
+</td>
+</tr>
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>
